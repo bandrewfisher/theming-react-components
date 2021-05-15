@@ -7,14 +7,18 @@ export function applyTheme(theme) {
 
 export function createTheme({
   primary,
+  primaryLight,
   secondary,
+  secondaryLight,
   accent,
   accentLight,
   textBase,
 }) {
   return {
     "--theme-primary": primary,
+    "--theme-primary-light": primaryLight,
     "--theme-secondary": secondary,
+    "--theme-secondary-light": secondaryLight,
     "--theme-accent": accent,
     "--theme-accent-light": accentLight,
     "--theme-text-base": textBase,

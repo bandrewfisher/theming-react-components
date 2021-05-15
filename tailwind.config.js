@@ -4,11 +4,10 @@ module.exports = {
   theme: {
     colors: {
       primary: "var(--theme-primary)",
+      "primary-light": "var(--theme-primary-light)",
       secondary: "var(--theme-secondary)",
-      accent: "var(--theme-accent)",
-      "accent-light": "var(--theme-accent-light)",
-      white: "white",
-      "text-base": "var(--theme-test-base)",
+      "secondary-light": "var(--theme-secondary-light)",
+      "text-base": "var(--theme-text-base)",
     },
     extend: {},
   },

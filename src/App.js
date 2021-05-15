@@ -1,23 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { useEffect } from "react";
+import Button from "./components/Button";
+import { applyTheme } from "./themes/utils";
+import baseTheme from "./themes/base";
+import darkTheme from "./themes/dark";
 
 function App() {
+  useEffect(() => {
+    applyTheme(baseTheme);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-center mt-5">
+      <Button onClick={() => applyTheme(baseTheme)}>Base theme</Button>
+      <Button color="secondary" onClick={() => applyTheme(darkTheme)}>
+        Dark theme
+      </Button>
     </div>
   );
 }

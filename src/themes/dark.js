@@ -2,9 +2,9 @@ import { createTheme } from "./utils";
 
 const darkTheme = createTheme({
   primary: "#212529",
+  primaryLight: "#464f58",
   secondary: "#343A40",
-  accent: "#6C757D",
-  accentLight: "#ADB5BD",
+  secondaryLight: "#737f8c",
   textBase: "white",
 });
 
